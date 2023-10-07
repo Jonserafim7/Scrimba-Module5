@@ -10,7 +10,7 @@ h1, h2, h3{
 }
 
 h1, h2{
-    color: #EED6D3;
+    color: #f3f3f3;
     margin: 0;
 }
 
@@ -29,7 +29,7 @@ h3{
 /* layout */
 
 header{
-    background-color: #67595E;
+    background-color: #d45d0d;
 }
 
 .header-inner{
@@ -103,8 +103,8 @@ input[type="radio"]{
 }
 
 .get-image-btn{
-    background-color: #67595e;
-    color: #eed6d3;
+    background-color: #d45d0d;
+    color: #f3f3f3;
     padding: 15px 19px;
     font-size: 24px;
     border: none;
