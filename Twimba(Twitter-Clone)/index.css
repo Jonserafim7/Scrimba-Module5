@@ -114,6 +114,10 @@ button{
     line-height: 20px;
 }
 
+.fa-solid {
+    color: #999;
+}
+
 /* images */
 
 .profile-pic{
