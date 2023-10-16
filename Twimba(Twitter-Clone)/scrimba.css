@@ -73,19 +73,12 @@ button{
 
 /* tweet */
 
-/* .feed {
-    display: flex;
-    flex-direction: column-reverse;
-} */
-
 .tweet{
     border-top: 1px solid lightgray;
     padding: 20px 0 0 0;
     width: 100%;
     margin: 15px 0;
 }
-
-
 
 .tweet-inner{
     display: flex;
@@ -95,7 +88,6 @@ button{
 
 .tweet-details{
     display: flex;
-    
     font-size: 13px;
     justify-content: space-between;
     width: 160px;
