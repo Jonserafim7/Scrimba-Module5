@@ -172,4 +172,24 @@ The ternary Operator: an alternative for if/else.
                 to this string. If not, we run the second expression 'Doing good!' in case the value is falsy.
 
 
-                    
+
+The rest parameter:
+
+                The rest parameter in JavaScript allows you to represent an indefinite number of arguments as an array.
+
+                example: 
+
+                        function setPermissionLevel(permissionLevel, ...names) {
+                            names.forEach((name)=> 
+                                console.log(`${name} now has ${permissionLevel} level access.`))
+                        }
+                        setPermissionLevel('admin', 'Dave', 'Sally')
+
+                        the console.log() output is:    Dave now has admin level access.
+                                                        Sally now has admin level access.
+
+                        if we console.log(names) inside the function, we would get an array with the rest of the
+                        arguments, like so: ['Dave', 'Sally']. If we add more arguments when calling the function, 
+                        they would also be added to that array.
+                                            
+                                                    
