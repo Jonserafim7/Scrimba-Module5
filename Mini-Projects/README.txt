@@ -1,8 +1,15 @@
 the .map() method:
 
+    The .map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
     In summary, map() is a powerful method that provides a concise way to process and transform all the elements of an array, returning a new array of transformed values.
     Use .map() method if you need to make use of the new array it returns.
     Use .foreach() if you don't need to create a new array.
+
+    example:
+            const numbers = [1, 2, 3, 4, 5];
+            const squared = numbers.map(num => num * num);
+            console.log(squared);  // [1, 4, 9, 16, 25]
+
 
 the .join() method:
 
