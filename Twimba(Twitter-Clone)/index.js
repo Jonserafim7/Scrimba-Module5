@@ -123,9 +123,9 @@ function getFeedHtml() {
         //     retweetedIconClass = 'retweeted'
         // }
 
-        const likeIconClass = tweet.isLiked ? 'liked': 'not-liked'
+        const likeIconClass = tweet.isLiked ? 'liked': ''
 
-        const retweetedIconClass = tweet.isRetweeted ? 'retweeted' : 'not-retweeted'
+        const retweetedIconClass = tweet.isRetweeted ? 'retweeted' : ''
 
         let repliesHtml = ''
 
