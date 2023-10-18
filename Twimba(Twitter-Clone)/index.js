@@ -112,16 +112,20 @@ function getFeedHtml() {
     let feedHTML = ""
 
     tweetsData.forEach(function(tweet){
-        let retweetedIconClass = ''
-        let likeIconClass = ''
+        // let retweetedIconClass = ''
+        // let likeIconClass = ''
         
+        // if (tweet.isLiked){
+        //     likeIconClass = 'liked'
+        // }
 
-        if (tweet.isLiked){
-            likeIconClass = 'liked'
-        }
-        if(tweet.isRetweeted) {
-            retweetedIconClass = 'retweeted'
-        }
+        // if(tweet.isRetweeted) {
+        //     retweetedIconClass = 'retweeted'
+        // }
+
+        const likeIconClass = tweet.isLiked ? 'liked': 'not-liked'
+
+        const retweetedIconClass = tweet.isRetweeted ? 'retweeted' : 'not-retweeted'
 
         let repliesHtml = ''
 
