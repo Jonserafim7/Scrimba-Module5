@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant ordering app</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h3 class="restaurant-name">Jimmy's Diner</h3>
+            <p class="restaurant-tagline">The best burgers and pizzas in town.</p>
+        </div>
+    </header>
+
+    <section class="menu-display" id="menu-display">
+        <!-- Items from the menu will be dynamically added here -->
+    </section>
+
+    <section class="cart-section hidden" id="cart-section">
+
+            
+        <div class="cart-container">
+
+            <div class="cart-title-container">
+                <h3 class="cart-title">Your order</h3>
+            </div>
+
+            <div class="cart-items" id="cart-items">
+                <!-- Ordered items will be dynamically added here -->
+            </div>
+
+            <div class="cart-total" id="cart-total">
+                <!-- Total price will be dynamically added here -->
+            </div>
+
+            <button class="complete-order-btn" data-completeorderbtn="complete">Complete order</button>
+        </div>
+
+            
+    </section>
+
+    <section class="payment-modal" id="payment-modal">
+        
+        <div class="close-modal-btn-container">
+            <button class="modal-close-btn" id="modal-close-btn" data-closemodal="closemodal">X</button>
+        </div>
+        <div class="modal-inner" id="modal-inner">
+            <h2 class="modal-tagline">Enter card details</h2>
+            <div class="modal-text" id="modal-text"></div>
+            				
+            <form id="payment-form">
+                <input 
+                type="text" 
+                name="fullName" 
+                placeholder="Enter your name"
+                aria-label="Enter your name" 
+                required
+                >
+                <input 
+                type="text" 
+                name="card-numer" 
+                placeholder="Enter card number"
+                aria-label="Enter card number"
+                required
+                >
+
+                <input 
+                type="text" 
+                name="cvv" 
+                placeholder="Enter CVV"
+                aria-label="Email CVV"
+                required
+                >
+                <button type="submit" class="modal-btn">Pay</button>    
+            </form>
+        </div>   
+    </section>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

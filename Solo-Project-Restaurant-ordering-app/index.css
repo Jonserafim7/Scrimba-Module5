@@ -1,0 +1,363 @@
+
+body {
+    margin: 0;
+    font-family: Smythe;
+    user-select: none;
+}
+
+
+
+
+/* Typography */
+.header-container h3, p {
+    font-style: normal;
+    font-weight: 400;
+    color: #FFF; 
+}
+
+.restaurant-name {
+    font-size: 39px;
+    line-height: 24px; /* 61.538% */
+    margin: 46px 0  0 50px;
+}
+
+.restaurant-tagline {
+    font-size: 22.422px;
+    line-height: 13.798px; /* 61.538% */
+    margin: 19px 0 0 50px;
+}
+
+.menu-item h3, .menu-item p {
+    color: #000;
+    font-family: Smythe;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 60% */
+}
+
+.menu-item-description {
+    color: #8B8B8B;
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+    margin: 0;
+}
+
+.menu-item-name {
+    font-size: 28px;
+    margin-bottom: 9px;
+}
+
+.menu-item-price {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.cart-title {
+    margin-top: 45px;
+    margin-bottom: 64px;
+}
+
+.cart-items h3, .cart-items p, .cart-total h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cart-item-price {
+    margin-left: auto;
+}
+
+.cart-item-name {
+    font-size: 28px;
+}
+
+.cart-total-content h3 {
+    color: #0E0E0E;
+}
+
+.total-price-text {
+    font-size: 28px;
+    line-height: 24px; /* 85.714% */
+}
+
+.total-price-value {
+    text-align: right;
+    font-size: 20px;
+    line-height: 24px; /* 120% */
+}
+
+/* Utility classes */
+.hidden {
+    display:none;
+}
+
+/* Layout */
+.container, .cart-container, .header-container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.cart-title-container {
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    background: url("./images/burguer.jpeg");
+    background-size: cover;
+    background-position: 0 -140px;
+    background-repeat: no-repeat ; 
+}
+
+.menu-item-content {
+    display: flex;
+    height: 180px;
+    border-bottom: 1px solid #D2D2D2;
+    padding-left: 30px;
+    padding-right: 50px;
+    gap: 20px;
+}
+
+.menu-item-icon {
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    font-size: 80px;
+}
+
+.menu-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px 0 50px;
+    color: #0E0E0E;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px solid #393333;
+    margin-bottom: 14px;
+    padding-bottom: 20px;
+    /* background-color: red; */
+}
+
+.cart-item-content {
+    display: flex;
+    align-items: center;
+}
+
+.cart-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 53px;
+}
+
+/* links/buttons */
+
+.add-to-cart-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #DEDEDE;
+    background-color: #FFF;
+    color: #3C3C3C;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px; /* 75% */
+    margin: auto 0 auto auto;
+    user-select: none;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #16DB99;
+    cursor: pointer;
+}
+
+.remove-cart-item-btn {
+    margin-left: 13px;
+    color: #BBB;
+    font-family: Verdana;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+}
+
+.remove-cart-item-btn:hover{
+    color: red;
+}
+
+.complete-order-btn {
+    /* display: flex; */
+    margin: 0 auto 53px auto;
+    width: 440px;
+    padding: 18px 0;
+    border-radius: 3px;
+    border: none;
+    background: #16DB99;
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+    font-family: Verdana;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+}
+
+.complete-order-btn:hover{
+    border: 1px solid #393333;
+}
+
+/* payment modal */
+
+.payment-modal {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 542px;
+    width: 524px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background: #FFF;
+    display:none
+}
+
+.modal-inner{
+    /* background-color: rgb(130, 130, 187); */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-tagline {
+    color: #000;
+    font-family: Verdana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.119px; /* 129.664% */
+}
+
+input{
+    margin-top: 10px; 
+    border: 1px solid #212529;
+    width: 450px;
+    border-radius: 3px;
+    padding: 10px 0 10px 25px;
+    color: #757575;
+    font-family: Verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.119px; /* 155.596% */
+    
+}
+
+.modal-btn{
+    width: 475.911px;
+    height: 71.304px;
+    flex-shrink: 0;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 3.89px;
+    background: #16DB99;
+    border: none;
+    color: #FFF;
+    margin: 45px auto 30px auto;
+
+    color: var(--white, #FFF);
+    font-family: Verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.119px; /* 155.596% */
+    
+}
+
+.close-modal-btn-container{
+    text-align: right;
+    margin: 9px;
+}
+
+.modal-close-btn {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #16DB99;
+  }
+
+.modal-close-btn:hover,
+.modal-close-btn:active{
+    color: red;
+    cursor: pointer;
+}
+
+.modal-close-btn:disabled{
+    /* color: whitesmoke; */
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+#uploadText {
+    color: #000;
+}
+
+.thanks-message {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45px auto 250px auto;
+    background-color: #ECFDF5;
+    width: 504px;
+    height: 120px;
+    flex-shrink: 0;
+
+    color: #065F46;
+    font-family: Smythe;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 52.5% */
+}
+
+/* Mobile-first approach, these styles will be the default */
+.container, .cart-container {
+    width: 100%; /* Take full width on small screens */
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+/* When screen is at least 768 pixels wide (typical tablet size) */
+@media screen and (min-width: 768px) {
+    .container, .cart-container {
+        width: 80%; /* Take 80% of the width on tablets */
+        margin: 0 auto; /* Center container */
+        padding: 0; /* Remove the padding */
+    }
+}
+
+/* When screen is at least 1024 pixels wide (desktop) */
+@media screen and (min-width: 1024px) {
+    .container, .cart-container {
+        width: 600px; /* Fixed width for large screens */
+    }
+}

@@ -8,8 +8,11 @@ function getPropertyHtml (array = [placeholderPropertyObj]) {
     let propertiesHTML = ``
 
     array.forEach(function(property) {
-    
+        
+        
         const {image, propertyLocation, priceGBP, comment, roomsM2} = property //object destructuring
+
+        console.log(roomsM2)
     
         propertiesHTML += `
             <div class="property" id="property">
